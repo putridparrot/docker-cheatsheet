@@ -1,4 +1,4 @@
-# docker-cheatsheet
+# Docker
 
 A list of useful commands, params etc. for the docker CLI
 
@@ -40,3 +40,12 @@ A list of useful commands, params etc. for the docker CLI
 | docker update --restart=no <container-name> | Stop a container from auto starting |
 
 
+# Docker Compose
+
+A list of useful commands, params etc. for the docker-compose CLI
+
+| Command | Description |
+|---------|-------------|
+| docker-compose up | Brings up the images etc. from the docker-compose.yml file |
+| docker-compose down | Brings up the images etc. from the docker-compose.yml file |
+| docker-compose ps | Show running docker-compose instances |
