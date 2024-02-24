@@ -58,7 +58,7 @@ A list of useful commands, params etc. for the docker CLI
 
 | Command | Description |
 |---------|-------------|
-| docker logs &lt;containe-id&gt; | Fetches the logs for the container |
+| docker logs &lt;container-id&gt; | Fetches the logs for the container |
 
 
 **Volumes** 
