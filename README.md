@@ -93,7 +93,7 @@ A list of useful commands, params etc. for the docker-compose CLI
 | docker-compose down | Brings up the images etc. from the docker-compose.yml file |
 | docker-compose ps | Show running docker-compose instances |
 
-[More](more-dockercompose.md)
+[More](More/docker-compose.md)
 
 # Dockerfile
 
@@ -112,4 +112,4 @@ Information about the Dockerfile instructions
 | docker build -t &lt;tag-name&gt;  . | Builds the supplied docker file named Dockerfile |
 | docker build -t &lt;tag-name&gt; -f &lt;docker-filename&gt; . | Builds the supplied docker file with the tag name |
 
-[More](more-dockerfile.md)
+[More](More/dockerfile.md)
