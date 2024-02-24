@@ -10,17 +10,17 @@ A list of useful commands, params etc. for the docker CLI
 | docker image ls | Lists the currently installed images |
 | docker image prune | Remove unused/dangling images |
 | docker image prune -a | Remove all unused/dangling images |
-| docker image history <image-name> | Show's the history of a supplied image |
-| docker rmi <image-name> | Remove an image |
-| docker image rm <image> | Remove image from the machine by image id |
-| docker image rm <tag> | Remove image from the machine by tag |
+| docker image history &lt;image-name&gt; | Show's the history of a supplied image |
+| docker rmi &lt;image-name&gt; | Remove an image |
+| docker image rm &lt;image&gt; | Remove image from the machine by image id |
+| docker image rm &lt;tag&gt; | Remove image from the machine by tag |
 
 **Inspect Docker information**
 
 | Command | Description |
 |---------|-------------|
-| docker inspect image <image-name> | Show's details of the image (inc. layers and meta data) |
-| docker inspect <network> | Inspect the details of the network using id or name |
+| docker inspect image &lt;image-name&gt; | Show's details of the image (inc. layers and meta data) |
+| docker inspect &lt;network&gt; | Inspect the details of the network using id or name |
 
 
 **Extended Build Capabilities** 
@@ -33,17 +33,17 @@ A list of useful commands, params etc. for the docker CLI
 
 | Command | Description |
 |---------|-------------|
-| docker start <container-id> | Starts a container that's been previous run |
-| docker stop <container-id> | Stops a container that's currently running (for terminates if not stopped in 10 secs) |
-| docker kill <container-id> | Force terminates a container |
-| docker start -a <container-id> | Starts a container that's been previous run output logs |
-| docker exec -it <container-id> <command> | Execute command within the container's shell |
-| docker exec -it <container-id> sh | Shell into the container |
-| docker run <container-id> | Run a new container of an image |
-| docker run --rm <container-id> | Run a new container of an image and remove it on exit |
-| docker run -p <host-port>:<container-port> <container-id> | Run a new container of an image mapping the host port to one exposed in the container |
-| docker run -e <env-varirable>=<value> | Run a new container of an image passing in an environment variable |
-| docker run -e <env-varirable>=<value> | Run a new container of an image passing in an environment variable |
+| docker start &lt;container-id&gt; | Starts a container that's been previous run |
+| docker stop &lt;container-id&gt; | Stops a container that's currently running (for terminates if not stopped in 10 secs) |
+| docker kill &lt;container-id&gt; | Force terminates a container |
+| docker start -a &lt;container-id&gt; | Starts a container that's been previous run output logs |
+| docker exec -it &lt;container-id&gt; &lt;command&gt; | Execute command within the container's shell |
+| docker exec -it &lt;container-id&gt; sh | Shell into the container |
+| docker run &lt;container-id&gt; | Run a new container of an image |
+| docker run --rm &lt;container-id&gt; | Run a new container of an image and remove it on exit |
+| docker run -p &lt;host-port&gt;:&lt;container-port&gt; &lt;container-id&gt; | Run a new container of an image mapping the host port to one exposed in the container |
+| docker run -e &lt;env-varirable&gt;=&lt;value&gt; | Run a new container of an image passing in an environment variable |
+| docker run -e &lt;env-varirable&gt;=&lt;value&gt; | Run a new container of an image passing in an environment variable |
 
 
 **Listing Containers**
@@ -58,7 +58,7 @@ A list of useful commands, params etc. for the docker CLI
 
 | Command | Description |
 |---------|-------------|
-| docker logs <containe-id> | Fetches the logs for the container |
+| docker logs &lt;containe-id&gt; | Fetches the logs for the container |
 
 
 **Volumes** 
@@ -72,7 +72,7 @@ A list of useful commands, params etc. for the docker CLI
 
 | Command | Description |
 |---------|-------------|
-| docker network create <name> | Create a docker network |
+| docker network create &lt;name&gt; | Create a docker network |
 | docker network ls | List the available networks |
 
 
@@ -80,7 +80,7 @@ A list of useful commands, params etc. for the docker CLI
 
 | Command | Description |
 |---------|-------------|
-| docker update --restart=no <container-name> | Stop a container from auto starting |
+| docker update --restart=no &lt;container-name&gt; | Stop a container from auto starting |
 
 
 # Docker Compose
@@ -101,15 +101,15 @@ Information about the Dockerfile instructions
 
 | Command | Description |
 |---------|-------------|
-| FROM <base-image> | Supply the base image for our image to use |
-| RUN <commands> | Supply the programs etc. you want to add to the base image |
-| CMD ["<command>"] | Supply the command to start when the container starts |
+| FROM &lt;base-image&gt; | Supply the base image for our image to use |
+| RUN &lt;commands&gt; | Supply the programs etc. you want to add to the base image |
+| CMD ["&lt;command&gt;"] | Supply the command to start when the container starts |
 
 **Using the Dockerfile**
 
 | Command | Description |
 |---------|-------------|
-| docker build -t <tag-name>  . | Builds the supplied docker file named Dockerfile |
-| docker build -t <tag-name> -f <docker-filename> . | Builds the supplied docker file with the tag name |
+| docker build -t &lt;tag-name&gt;  . | Builds the supplied docker file named Dockerfile |
+| docker build -t &lt;tag-name&gt; -f &lt;docker-filename&gt; . | Builds the supplied docker file with the tag name |
 
 [More](more-dockerfile.md)
