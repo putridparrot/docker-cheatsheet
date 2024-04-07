@@ -14,6 +14,12 @@ A list of useful commands, params etc. for the docker CLI
 | docker rmi &lt;image-name&gt; | Remove an image |
 | docker image rm &lt;image&gt; | Remove image from the machine by image id |
 | docker image rm &lt;tag&gt; | Remove image from the machine by tag |
+| docker image pull &lt;image&gt; | Pull's and named image (shortcut docker pull)
+
+**Updated images**
+| Command | Description |
+|---------|-------------|
+| docker commit | Commit changes to create a new layer on an image (i.e. new image is created) |
 
 **Inspect Docker information**
 
@@ -21,6 +27,7 @@ A list of useful commands, params etc. for the docker CLI
 |---------|-------------|
 | docker inspect image &lt;image-name&gt; | Show's details of the image (inc. layers and meta data) |
 | docker inspect &lt;network&gt; | Inspect the details of the network using id or name |
+| docker info | Displays docker system information |
 
 
 **Extended Build Capabilities** 
